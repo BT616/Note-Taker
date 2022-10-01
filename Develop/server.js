@@ -42,6 +42,23 @@ app.post('/api/notes', (req, res) => {
     res.json(newNote)
 })
 
+
+//app.delete for deleting, like post or get 
+app.delete('/api/notes/:id', (req,res) =>
+
+{
+})
+
+
+
+
+
+
+
+
+
+
+
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/index.html'))
 });
